@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account — SHOPVERSE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-wrap">
+  <div class="auth-media">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&h=1200&fit=crop" alt="Premium fashion and lifestyle products">
+    <div class="auth-media-overlay">
+      <a href="index.html" class="logo">SHOP<span>VERSE</span></a>
+      <div class="auth-quote">
+        <h2>Join a store built around your style.</h2>
+        <p>Create an account to save products, build your wishlist and check out faster next time.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <a href="index.html" class="back-home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to shop
+      </a>
+
+      <div id="signupFormWrap">
+        <h1>Create your account</h1>
+        <p class="sub">Join SHOPVERSE and start shopping.</p>
+
+        <form id="signupForm" novalidate>
+          <div class="form-group">
+            <label for="signupName">Full Name</label>
+            <input type="text" id="signupName" placeholder="Your full name" autocomplete="name">
+            <div class="field-error" id="signupNameError"></div>
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" placeholder="you@example.com" autocomplete="email">
+            <div class="field-error" id="signupEmailError"></div>
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" placeholder="Create a password" autocomplete="new-password">
+            <div class="field-error" id="signupPasswordError"></div>
+          </div>
+          <div class="form-group">
+            <label for="signupConfirm">Confirm Password</label>
+            <input type="password" id="signupConfirm" placeholder="Re-enter your password" autocomplete="new-password">
+            <div class="field-error" id="signupConfirmError"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        </form>
+
+        <p class="auth-footer-line">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+
+      <div class="auth-success" id="signupSuccess">
+        <div class="check-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h2>Account created</h2>
+        <p>Welcome to SHOPVERSE — your account is ready to go.</p>
+        <a href="index.html" class="btn btn-primary btn-block">Continue to Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
